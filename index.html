@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Kalkulator Matematik</title>
+  <title>My Blog</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Kalkulator Matematik</h1>
-    <div class="container">
-      <div class="luas">
-        <h2>Luas Persegi</h2>
-        <label for="sideLength">Masukkan sisi persegi</label>
-        <input type="number" id="sideLength" placeholder="Sisi Persegi">
-        <button id="calculateLuas">Hitung</button>
-        <div id="result_luas"></div>
-      </div>
+  <header>
+    <h1>MY BLOG</h1>
+    <a href="aboutme.html">
+      <button class="aboutMe">ABOUT ME</button>
+    </a>
+    <button id="addButton" onclick="showEditor()">+</button>
+  </header>
+  
+  <section id="blogList"></section>
+  
+  <section id="editor">
+    <h2>Create/Edit Blog</h2>
+    <input type="text" id="blogTitle" placeholder="Title">
+    <textarea id="blogContent" placeholder="Content"></textarea>
+    <button id="saveButton" onclick="saveBlog()">Save</button>
+    <button id="cancelButton" onclick="hideEditor()">Cancel</button>
+  </section>
 
-      <div class="luas">
-        <h2>Keliling</h2>
-        <label for="sideLength">Masukkan sisi persegi</label>
-        <input type="number" id="sideLength" placeholder="Sisi Persegi">
-        <button id="calculateKeliling">Hitung</button>
-        <div id="result_keliling"></div>
-      </div>
-    </div>
-
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

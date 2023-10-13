@@ -1,28 +1,122 @@
-body {
-  font-family: Arial, sans-serif;
-}
+body 
+  {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header 
+  {
+    background-color: #98c1d9;
+    color: #3d5a80;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 
+  {
+    margin: 0;
+  }
+  
+  #blogList 
+  {
+    margin: 20px;
+  }
+  
+  #editor 
+  {
+    margin: 20px;
+    display: none;
+  }
+  
+  input[type="text"], textarea 
+  {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button 
+  {
+    padding: 10px 20px;
+    background-color: #3d5a80;
+    color: #e0fbfc;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
 
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
+  #addButton
+  {
+    position: fixed;
+    left: 95%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  button:hover 
+  {
+    opacity: 0.8;
+  }
 
-input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
+  button:active
+  {
+    opacity: 0.6;
+  }
+  
+  .blog-preview 
+  {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-preview h3 
+  {
+    margin: 0;
+  }
+  
+  .blog-preview p 
+  {
+    margin: 10px 0;
+  }
+  
+  .blog-preview button 
+  {
+    margin-top: 10px;
+  }
 
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
+  .fotoProfil
+  {
+    margin: 10px;
+    width: 200px;
+    border-radius: 3px;
+    vertical-align: top;
+  }
 
-#result {
-  margin-top: 10px;
-}
+  .isiAboutMe 
+  {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .profile
+  {
+    background-color: #e0fbfc;
+    display: inline-block;
+    width: 350px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    margin: 10px;
+    text-align: justify;
+  }
+    
+  
